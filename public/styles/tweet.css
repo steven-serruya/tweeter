@@ -10,8 +10,9 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-right: 565px;
+  margin-right: 920px;
   /* Move the button slightly to the left of center */
+  margin-top: 25px;
 }
 
 .new-tweet button:hover {
@@ -19,12 +20,17 @@
 }
 
 .new-tweet label {
-  text-align: center;
-  /* Center the text */
+  white-space: nowrap;
+  /* This ensures the placeholder text doesn't wrap to the next line */
+
+  text-align: left;
+  /* Adjust text alignment to the left */
   display: block;
-  border-bottom: 2px solid #333;
   padding-bottom: 10px;
-  margin: 0 auto;
+  margin-left: 0px;
+  /* Move the label slightly to the left */
+  font-size: 25px;
+  margin-bottom: 25px;
 }
 
 /* Adjust the container of the label, button, textarea, and counter */
@@ -34,6 +40,9 @@
   /* Center align items horizontally */
   align-items: center;
   /* Align items vertically in the middle */
+  justify-content: center;
+  /* This will center-align the children vertically */
+
 }
 
 /* Position the counter slightly to the right of center */
@@ -44,7 +53,116 @@
 }
 
 #tweet-text {
-  width: 400px;
+  height: 50px;
+  width: 1400px;
   margin: 0 10px;
-  /* Add some spacing on both sides of the textarea */
+  border: none;
+  /* Removes all borders */
+  border-bottom: 2px solid #333;
+  /* Adds a bottom border */
+  outline: none;
+  /* Removes the browser's default outline (optional but usually added for aesthetic reasons) */
+  padding: 10px 0;
+  /* You may adjust this padding as needed */
+  background-color: #f4f1ec;
+  margin-bottom: -25px;
+}
+
+.maketweet header {
+  position: relative;
+  margin-top: 80px;
+  /* Adjust this value as desired */
+
+  background: none;
+  /* This ensures no background image is set */
+  /* ... other styles ... */
+  color: rgb(84, 81, 73)
+}
+
+.maketweet header p {
+  border-bottom: 3px solid #ccc;
+  /* Adjust color (#ccc) as needed */
+  padding-bottom: 8px;
+  /* Optional: to give some space between the text and the border */
+  margin-bottom: 10px;
+  /* Add margin to create space between the tweet content and the footer. Adjust this value to your liking */
+}
+
+#timeoftweet {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+  margin-left: 120px;
+  /* To give some space between the time and icons */
+}
+
+.maketweet footer {
+  display: flex;
+  justify-content: space-between;
+  /* This will push the time and icons to the opposite ends */
+  align-items: center;
+  /* This will vertically align the items in the center */
+  margin-top: -125px;
+  margin-right: 100px;
+  /* Add margin on top. Adjust this value to your liking */
+
+}
+
+.maketweet:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adjust the values as needed */
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition for the shadow */
+}
+
+.maketweet:hover .fa-flag {
+  color: blue;
+  /* Change to the desired hover color */
+  transition: color 0.3s ease;
+  /* Smooth transition for the color */
+}
+
+.maketweet:hover .fa-retweet {
+  color: green;
+  /* Change to the desired hover color */
+  transition: color 0.3s ease;
+  /* Smooth transition for the color */
+}
+
+.maketweet:hover .fa-heart {
+  color: red;
+  /* Change to the desired hover color */
+  transition: color 0.3s ease;
+  /* Smooth transition for the color */
+}
+
+.maketweet header img {
+  position: absolute;
+  top: 0;
+  /* Adjust this if you want some space from the top */
+  left: 140px;
+
+  /* Adjust this if you want some space from the right */
+}
+
+.maketweet header .user-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  /* This will vertically align the image and the username */
+}
+
+.maketweet header .user-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+  /* Provides some spacing between the username and the image */
+}
+
+header .user-info .username {
+  margin-top: 30px;
+  margin-left: 235px;
 }
