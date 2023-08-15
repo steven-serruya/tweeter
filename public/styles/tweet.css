@@ -4,23 +4,14 @@
 
 .new-tweet button {
   background-color: #007BFF;
-  /* This gives a blue background color. */
   color: #FFFFFF;
-  /* White font color. */
   padding: 10px 20px;
-  /* 10px top and bottom, 20px left and right padding. */
   border: none;
-  /* Removes the default border. */
   border-radius: 5px;
-  /* Rounds the corners. */
   cursor: pointer;
-  /* Changes the cursor to hand pointer on hover. */
   transition: background-color 0.3s;
-  /* Smoothens the color change on hover. */
-  display: block;
-  margin-top: 10px;
-  /* Add some spacing between the button and the text above */
-  /* Other button styles... */
+  margin-right: 565px;
+  /* Move the button slightly to the left of center */
 }
 
 .new-tweet button:hover {
@@ -28,37 +19,32 @@
 }
 
 .new-tweet label {
-  text-align: left;
+  text-align: center;
+  /* Center the text */
   display: block;
   border-bottom: 2px solid #333;
-  /* Adds a bottom border */
   padding-bottom: 10px;
-  /* Adds some space between the text and the border */
+  margin: 0 auto;
 }
 
-/* Adjust the container of the button */
+/* Adjust the container of the label, button, textarea, and counter */
 .new-tweet div {
   display: flex;
-  justify-content: space-between;
-  /* This pushes the child items to the outer edges */
+  justify-content: center;
+  /* Center align items horizontally */
   align-items: center;
-  /* Align vertically in the middle */
+  /* Align items vertically in the middle */
 }
 
-.new-tweet button {
-  order: 1;
-  /* Ensures the button is on the left */
-  /* Other button styles... */
-}
-
-/* Position the counter to the right */
+/* Position the counter slightly to the right of center */
 .counter {
-  order: 2;
   font-weight: bold;
-  /* Ensures the counter is on the right */
+  margin-left: 20px;
+  /* Move the counter slightly to the right */
 }
 
 #tweet-text {
-  width: 500px;
-  /* Adjust this value to your preference */
+  width: 400px;
+  margin: 0 10px;
+  /* Add some spacing on both sides of the textarea */
 }
