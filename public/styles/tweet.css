@@ -1,168 +1,127 @@
 .new-tweet {
   text-align: center;
+  width: 100%;
 }
 
-.new-tweet button {
-  background-color: #007BFF;
-  color: #FFFFFF;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-right: 920px;
-  /* Move the button slightly to the left of center */
-  margin-top: 25px;
-}
-
-.new-tweet button:hover {
-  background-color: #0056b3;
-}
-
-.new-tweet label {
-  white-space: nowrap;
-  /* This ensures the placeholder text doesn't wrap to the next line */
-
-  text-align: left;
-  /* Adjust text alignment to the left */
-  display: block;
-  padding-bottom: 10px;
-  margin-left: 0px;
-  /* Move the label slightly to the left */
-  font-size: 25px;
-  margin-bottom: 25px;
-}
-
-/* Adjust the container of the label, button, textarea, and counter */
-.new-tweet div {
+.new-tweet {
   display: flex;
-  justify-content: center;
-  /* Center align items horizontally */
-  align-items: center;
-  /* Align items vertically in the middle */
-  justify-content: center;
-  /* This will center-align the children vertically */
+  flex-direction: column;
+}
+
+/* decied whether to left or middle */
+.new-tweet>h2 {
+  text-align: left;
+}
+
+.tweet-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-input-group>label {
+  text-align: left;
+  font-weight: 600;
 
 }
 
-/* Position the counter slightly to the right of center */
-.counter {
-  font-weight: bold;
-  margin-left: 20px;
-  /* Move the counter slightly to the right */
-}
-
-#tweet-text {
-  height: 50px;
-  width: 1400px;
-  margin: 0 10px;
+.tweet-input-group>textarea {
+  background-color: #f8f4ec;
   border: none;
-  /* Removes all borders */
-  border-bottom: 2px solid #333;
-  /* Adds a bottom border */
+  resize: none;
+  border-bottom: 2px solid #007BFF;
+  /* Color of the line, change as required */
   outline: none;
-  /* Removes the browser's default outline (optional but usually added for aesthetic reasons) */
-  padding: 10px 0;
-  /* You may adjust this padding as needed */
-  background-color: #f4f1ec;
-  margin-bottom: -25px;
+  /* Remove the default browser outline on focus */
 }
 
-.maketweet header {
-  position: relative;
-  margin-top: 80px;
-  /* Adjust this value as desired */
-
-  background: none;
-  /* This ensures no background image is set */
-  /* ... other styles ... */
-  color: rgb(84, 81, 73)
-}
-
-.maketweet header p {
-  border-bottom: 3px solid #ccc;
-  /* Adjust color (#ccc) as needed */
-  padding-bottom: 8px;
-  /* Optional: to give some space between the text and the border */
-  margin-bottom: 10px;
-  /* Add margin to create space between the tweet content and the footer. Adjust this value to your liking */
-}
-
-#timeoftweet {
-  font-size: 14px;
-  color: #666;
-  margin-right: 10px;
-  margin-left: 120px;
-  /* To give some space between the time and icons */
-}
-
-.maketweet footer {
+.new-tweet-footer {
   display: flex;
   justify-content: space-between;
-  /* This will push the time and icons to the opposite ends */
-  align-items: center;
-  /* This will vertically align the items in the center */
-  margin-top: -125px;
-  margin-right: 100px;
-  /* Add margin on top. Adjust this value to your liking */
+  margin-top: .5em;
+}
+
+.new-tweet-footer>button {
+  font-family: 'Bungee', sans-serif;
+  background-color: #007BFF;
+  /* Blue color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  /* For a slight shadow effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 }
 
-.maketweet:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  /* Adjust the values as needed */
-  transition: box-shadow 0.3s ease;
-  /* Smooth transition for the shadow */
+.new-tweet-footer>button:hover {
+  background-color: #0056b3;
+  /* Darker blue */
+  transform: scale(1.05);
+  /* Slightly enlarge the button */
 }
 
-.maketweet:hover .fa-flag {
-  color: blue;
-  /* Change to the desired hover color */
-  transition: color 0.3s ease;
-  /* Smooth transition for the color */
+
+/* Button active (pressed) effect */
+.blue-button:active {
+  background-color: #004299;
+  /* Even darker blue */
+  transform: scale(0.95);
+  /* Slightly shrink the button */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Slight change in shadow */
 }
 
-.maketweet:hover .fa-retweet {
-  color: green;
-  /* Change to the desired hover color */
-  transition: color 0.3s ease;
-  /* Smooth transition for the color */
+article.maketweet header p {
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 4px solid black;
+  /* Adjust color and width as needed */
+  padding-bottom: 10px;
+  /* Add some space below the text, above the border */
+  margin-top: 130px;
+  /* Add some space above and below the bordered text */
 }
 
-.maketweet:hover .fa-heart {
-  color: red;
-  /* Change to the desired hover color */
-  transition: color 0.3s ease;
-  /* Smooth transition for the color */
-}
-
-.maketweet header img {
-  position: absolute;
-  top: 0;
-  /* Adjust this if you want some space from the top */
-  left: 140px;
-
-  /* Adjust this if you want some space from the right */
-}
-
-.maketweet header .user-info {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+article.maketweet .user-info {
   display: flex;
   align-items: center;
-  /* This will vertically align the image and the username */
 }
 
-.maketweet header .user-info img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+
+
+/* do the counter  */
+article>footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
   margin-left: 10px;
-  /* Provides some spacing between the username and the image */
+  margin-right: 10px;
 }
 
-header .user-info .username {
-  margin-top: 30px;
-  margin-left: 235px;
+article>header {
+  height: 330px;
+}
+
+article>footer>div>i:hover {
+  color: red;
+}
+
+
+.maketweet {
+  border: 5px solid black;
+  /* Adjust the color and width as required */
+  padding: 10px;
+  /* Add some space inside the border */
+  margin: 10px 0;
+  /* Add some space outside the border */
+  border-radius: 5px;
+  /* To make the corners slightly rounded */
 }

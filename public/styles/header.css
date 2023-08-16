@@ -1,10 +1,10 @@
-header {
+body>header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  height: 520px;
+  height: 400px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -13,12 +13,6 @@ header {
 
 }
 
-header h2 {
-  font-weight: normal;
-  /* this will ensure the overall text is not bold */
-}
-
-header h2 strong {
-  font-weight: bold;
-  /* this will make the text inside <strong> bold */
+header>div>span {
+  font-size: 2em;
 }
