@@ -60,7 +60,7 @@ $(document).ready(function() {
     const timeAgo = $.timeago(new Date(tweet.created_at)); // Use timeago here
 
     const $tweet = $(`
-      <article class="tweet">
+      <article class="maketweet">
         <header>
           <div>
             <img src="${tweet.user.avatars}" alt="${tweet.user.name}'s avatar">
@@ -72,7 +72,6 @@ $(document).ready(function() {
         <footer>
           <span>${timeAgo}</span> 
           <div class="tweet-icons">
-            <span id="timeoftweet">${timeAgo}</span> 
             <div>
               <i class="fa-solid fa-flag"></i>
               <i class="fas fa-retweet"></i>
