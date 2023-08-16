@@ -28,7 +28,7 @@
   background-color: #f8f4ec;
   border: none;
   resize: none;
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid black;
   /* Color of the line, change as required */
   outline: none;
   /* Remove the default browser outline on focus */
@@ -124,4 +124,10 @@ article>footer>div>i:hover {
   /* Add some space outside the border */
   border-radius: 5px;
   /* To make the corners slightly rounded */
+}
+
+article.maketweet:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+  /* More pronounced shadow when hovering */
+
 }
