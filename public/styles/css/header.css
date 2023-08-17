@@ -1,0 +1,32 @@
+body > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #d69722;
+  background-image: url(http://www.transparenttextures.com/patterns/absurdity.png);
+}
+body > header > div > span {
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  body > header {
+    width: 30%;
+    float: left;
+    margin-left: 4%;
+    margin-top: 4%;
+  }
+  main.container {
+    width: 55%;
+    float: right;
+    margin-right: 5%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

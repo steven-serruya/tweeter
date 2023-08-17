@@ -1,0 +1,32 @@
+$primary-bg-color: #4056A1;
+$primary-text-color: #FFFFFF;
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  position: relative;
+  z-index: 2;
+
+  span {
+    font-family: "Bungee";
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .writetweet {
+    margin-left: auto; // This is the change that pushes it to the right
+    padding-left: 1.5em;
+    font-family: "Sources sans 3";
+  }
+
+  .down-arrow {
+    color: red; // sets the color to red
+    position: relative; // allows you to move the icon using top and left properties
+    top: 33px; // pushes the icon downwards
+    left: -120px; // moves the icon to the left
+    z-index: 1; // ensures the icon stays above other elements
+  }
+}
