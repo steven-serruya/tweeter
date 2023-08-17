@@ -55,11 +55,17 @@
   <main class="container">
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
+      <div class="error-message" hidden>
+        <i class="fa fa-exclamation-triangle alert-icon"></i> <!-- Alert Icon -->
+        <p>Your error message goes here</p>
+        <i class="fa fa-exclamation-triangle alert-icon"></i> <!-- Alert Icon -->
+      </div>
       <form action="/tweets/" method="post">
         <div class="tweet-input-group">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
         </div>
+
         <div class="new-tweet-footer">
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text" id="counter">140</output>

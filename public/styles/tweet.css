@@ -153,11 +153,11 @@ article.maketweet:hover {
 
 
 .maketweet footer .tweet-icons .fa-solid.fa-flag:hover {
-  color: green
+  color: purple
 }
 
 .maketweet footer .tweet-icons .fas.fa-retweet:hover {
-  color: purple
+  color: greenyellow
 }
 
 .maketweet footer .tweet-icons .fas.fa-heart:hover {
@@ -197,4 +197,36 @@ header div>span {
 
 span.handle {
   margin-left: 44px;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  /* Center the content vertically */
+  justify-content: space-around;
+  /* Center the content horizontally */
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  /* white text color */
+  background-color: #f8f4ec;
+  /* red background color */
+  border: 5px solid red;
+  /* a border to highlight the error */
+  border-radius: 5px;
+  /* rounded corners */
+  padding: 10px;
+  /* some space around the text */
+  margin: 10px 0;
+  /* space above and below the error message */
+  width: 90%;
+  /* width of the error message box */
+  text-align: center;
+  /* centering the text */
+  width: 100%;
+  /* Set the width to 100% */
+  margin-left: 0;
+  /* Remove left margin */
+  margin-right: 0;
+  /* Remove right margin */
 }
