@@ -27,6 +27,10 @@ $(document).ready(function() {
     $(".error-message").attr('hidden', true);
   });
 
+  $(".writetweet, .down-arrow").click(function() {
+    $(".new-tweet").slideToggle();
+  });
+
   $(".new-tweet form").on("submit", function(event) {
     event.preventDefault(); // This ensures the form doesn't submit
 

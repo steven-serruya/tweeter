@@ -200,7 +200,7 @@ span.handle {
 }
 
 .error-message {
-  display: flex;
+  display: none;
   align-items: center;
   /* Center the content vertically */
   justify-content: space-around;
